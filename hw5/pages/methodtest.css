@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../../hw4/fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "RobotoCondensedBold";
+
+  src: url("../../hw4/fonts/RobotoCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "RobotoCondensedItalic";
+
+  src: url("../../hw4/fonts/RobotoCondensed-Italic.ttf");
+}
+
+* {
+  font-family: "RobotoCondensedBold", sans-serif;
+}
+main {
+  text-align: center;
+}
+h1 {
+  align-self: center;
+  font-size: 12vw;
+  margin: 0;
+  line-height: 12vw;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+}
+h2 {
+  font-family: "RobotoCondensed", sans-serif;
+  align-self: center;
+  font-size: 3vw;
+
+  margin: 0;
+  line-height: 5vw;
+  color: lightgray;
+  margin-bottom: 3em;
+}
+
+#formDiv {
+  margin: 20px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+#radioButtonContainer {
+  display: flex;
+  flex-direction: row;
+
+}
+
+button {
+    margin-right: 5px;
+}
+
+#buttonContainer {
+    display: flex;
+    flex-direction: row;
+}

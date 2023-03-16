@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Kyle Wade Website" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Kyle Wade" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./methodtest.css" />
+    <title>Kyle Wade's Website</title>
+    <noscript>
+      <p>
+        JavaScript is disabled in your browser. Please enable it for HTTP with
+        JavaScript.
+      </p>
+    </noscript>
+  </head>
+
+  <body>
+    <form id="formInput">
+      <div id="formDiv">
+        <label>id:</label>
+        <input required type="number" id="id" name="id" />
+
+        <label>name of article:</label>
+        <input required type="text" id="article_name" name="article_name" />
+
+        <label>body of article:</label>
+        <textarea required id="article_body" name="article_body"></textarea>
+
+        <label for="date">date:</label>
+        <input type="text" id="date" name="date" disabled />
+      </div>
+
+      <div id="buttonContainer">
+        <button type="button" name="button" id="getBtn">GET</button>
+        <button type="button" name="button" id="postBtn">POST</button>
+        <button type="button" name="button" id="putBtn">PUT</button>
+        <button type="button" name="button" id="deleteBtn">DELETE</button>
+      </div>
+
+      <br />
+      <br />
+      <div class="radioButtonContainer">
+        <label for="fetchButton" class="radioArea">
+          <input
+            checked
+            type="radio"
+            name="requestType"
+            id="fetchButton"
+            value="fetchButton"
+          />
+          Fetch
+        </label>
+        <label for="xmlButton" class="radioArea">
+          <input
+            type="radio"
+            name="requestType"
+            id="xmlButton"
+            value="xmlButton"
+          />
+          XML
+        </label>
+      </div>
+    </form>
+
+    <output id="outputPrompt"></output>
+
+    <script src="methodtest.js"></script>
+  </body>
+</html>
